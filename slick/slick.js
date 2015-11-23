@@ -1027,7 +1027,7 @@
         verticalHeight = _.$slides.first().outerHeight(true);
 
         if (_.options.infinite === true) {
-            if (_.slideCount > _.options.slidesToShow) {
+            if (_.slideCount >= _.options.slidesToShow) {
                 _.slideOffset = (_.slideWidth * _.options.slidesToShow) * -1;
                 verticalOffset = (verticalHeight * _.options.slidesToShow) * -1;
             }
